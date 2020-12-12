@@ -119,7 +119,7 @@ class _CountriesPageState extends State<CountriesPage> {
                                   },
                                   child: Column(children: [
                                     Padding(
-                                      padding: const EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.only(top:10.0,left:5.0,right: 5.0 ),
                                       child: Row(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
@@ -129,7 +129,7 @@ class _CountriesPageState extends State<CountriesPage> {
                                             alignment: Alignment.bottomRight,
                                             children: [
                                               Image.network(
-                                                  'https://flagcdn.com/48x36/${code.toLowerCase()}.png'),
+                                                  "https://flagcdn.com/w80//${code.toLowerCase()}.png"),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   borderRadius:
@@ -158,7 +158,7 @@ class _CountriesPageState extends State<CountriesPage> {
                                             flex: 2,
                                             child: Column(
                                                 mainAxisAlignment:
-                                                    MainAxisAlignment.start,
+                                                    MainAxisAlignment.spaceEvenly,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
@@ -168,7 +168,7 @@ class _CountriesPageState extends State<CountriesPage> {
                                                       ['capital'])
                                                 ]),
                                           ),
-                                          Icon(Icons.arrow_forward_ios),
+                                          Center(child: Icon(Icons.arrow_forward_ios)),
                                         ],
                                       ),
                                     ),
@@ -176,7 +176,7 @@ class _CountriesPageState extends State<CountriesPage> {
                                       color: Colors.grey,
                                       height: 20,
                                       thickness: 1,
-                                      indent: 70,
+                                      indent: 100,
                                       endIndent: 0,
                                     ),
                                   ]),

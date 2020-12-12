@@ -78,8 +78,8 @@ class _CountryDetailPageState extends State<CountryDetailPage> {
   Widget build(BuildContext context) {
     int index = widget.argument;
     dynamic countryData = Provider.of<CountryProvider>(context);
-    print(index);
-    print(countryData.toString());
+    //print(index);
+   // print(countryData.toString());
     return Scaffold(
       appBar: AppBar(
         title: Text(''),
@@ -167,7 +167,7 @@ class _CountryDetailPageState extends State<CountryDetailPage> {
                               height: MediaQuery.of(context).size.height * 0.02,
                             ),
                             Image.network(
-                                'https://flagcdn.com/112x84/${code.toLowerCase()}.png'),
+                                "https://flagcdn.com/w320/${code.toLowerCase()}.png"),
                             SizedBox(
                               height: MediaQuery.of(context).size.height * 0.05,
                             ),
@@ -358,7 +358,7 @@ class _CountryDetailPageState extends State<CountryDetailPage> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(2.0),
                                     child: Image.network(
-                                        'https://flagcdn.com/80x60/${borderCodeFlag.toLowerCase()}.png'),
+                                        "https://flagcdn.com/w160/${borderCodeFlag.toLowerCase()}.png"),
                                   ),
                                   onTap: () {
                                     for (int y = 0;
